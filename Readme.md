@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Димитрий Копылов](https://up.htmlacademy.ru/htmlcss/31/user/918735).
-* Наставник: [Герман Карев](https://www.instagram.com/html.mentor/).
+* Наставник: [Герман Карев](https://htmlacademy.ru/profile/id269691).
 
 ---
 

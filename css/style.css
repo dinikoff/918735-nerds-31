@@ -1,0 +1,261 @@
+:root {
+  --basic-bg-color: #EEEEEE;
+  --accent1-color: #FB565A;
+  --accent1-hover-color: #E74246;
+  --accent1-active-color: #D7373B;
+  --accent2-color: #00CA74;
+  --accent2-hover-color: #00BC6C;
+  --accent2-active-color: #00AA62;
+  --accent3-color: #EFC849;
+  --accent3-hover-color: #EAB534;
+  --accent3-active-color: #E5A722;
+  --text-color: #283136;
+  --text-bold-color: #000;
+  --text-button-color: #fff;
+  --text-button-active-color: rgba(255, 255, 255, 0.3);
+  --text-opacity-color: rgba(0, 0, 0, 0.3);
+  --text-contacts-color: #666;
+  --social-text-color: #444;
+  --social-gradient1-color: #E1E1E1;
+  --social-gradient2-color: #fff;
+  --shadow-color: rgba(0, 1, 1, 0.1);
+}
+
+.page {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+/* button */
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-button-color);
+  font-weight: 500;
+  line-height: 18px;
+  border: none;
+}
+
+.button:active {
+  color: var(--text-button-active-color);
+  box-shadow: inset 0px 3px 0px var(--shadow-color);
+}
+
+.button-accent1 {
+  background-color: var(--accent1-color);
+}
+
+.button-accent1:hover {
+  background-color: var(--accent1-hover-color);
+}
+
+.button-accent1:active {
+  background-color: var(--accent1-active-color);
+}
+
+.button-accent2 {
+  background-color: var(--accent2-color);
+}
+
+.button-accent2:hover {
+  background-color: var(--accent2-hover-color);
+}
+
+.button-accent2:active {
+  background-color: var(--accent2-active-color);
+}
+
+.button-accent3 {
+  background-color: var(--accent3-color);
+}
+
+.button-accent3:hover {
+  background-color: var(--accent3-hover-color);
+}
+
+.button-accent3:active {
+  background-color: var(--accent3-active-color);
+}
+
+/* header */
+
+.header {
+  background-color: var(--basic-bg-color);
+}
+
+.header-logo:hover {
+  opacity: 0.7;
+}
+
+.header-logo:active {
+  opacity: 0.3;
+}
+
+.header-nav-container {
+  list-style: none;
+}
+
+.header-nav-link {
+  line-height: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-bold-color);
+}
+
+.header-nav-link:hover {
+  color: var(--accent1-color);
+}
+
+.header-nav-link:not([href]) {
+  border-bottom: 2px solid var(--accent1-color);
+}
+
+.header-nav-link:active {
+  color: var(--text-opacity-color);
+}
+
+/* slider */
+
+.slider {
+  list-style: none;
+}
+
+.slider-title {
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--text-bold-color);
+}
+
+/* services */
+
+.services-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--text-bold-color);
+}
+
+.services-list {
+  list-style: none;
+}
+
+/* about */
+
+.about-title {
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--text-bold-color);
+}
+
+.about-list {
+  list-style: none;
+}
+
+.about-subtitle {
+  font-weight: bold;
+}
+
+.about-numbers-title {
+  font-weight: 700;
+  color: var(--text-bold-color);
+  text-transform: uppercase;
+}
+
+.about-numbers {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+  color: var(--text-bold-color);
+}
+
+.about-percent {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.about-numbers-text {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* clients */
+
+.clients-list {
+  list-style: none;
+}
+
+.client-logo {
+  opacity: 0.2;
+}
+
+.client-logo:hover {
+  opacity: 1;
+}
+
+.client-logo:active {
+  opacity: 0.3;
+}
+
+/* contacts */
+
+.contacts-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: var(--text-bold-color);
+}
+
+.contacts-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--text-contacts-color);
+}
+
+.contacts-phone {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacts-button {
+  border: none;
+}
+
+/* social */
+
+.social-list {
+  list-style: none;
+}
+
+.social-icon {
+  background: linear-gradient(0deg, var(--social-gradient1-color), var(--social-gradient1-color)), var(--social-gradient2-color);
+}
+
+.social-icon:hover {
+  background: linear-gradient(0deg, var(--accent1-hover-color), var(--accent1-hover-color)), var(--social-gradient2-color);
+}
+
+.social-icon:active {
+  background: linear-gradient(0deg, var(--accent1-active-color), var(--accent1-active-color)), var(--social-gradient2-color);
+  box-shadow: inset 0px 3px 0px var(--shadow-color);
+}
+
+.social-icon:active img {
+  opacity: 0.5;
+}
+
+.social-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--text-bold-color);
+}
+
+.social-text {
+  color: var(--social-text-color);
+  font-size: 16px;
+  line-height: 22px;
+}

@@ -14,6 +14,7 @@
   --text-button-color: #fff;
   --text-button-active-color: rgba(255, 255, 255, 0.3);
   --text-opacity-color: rgba(0, 0, 0, 0.3);
+  --text-less-opacity-color: rgba(0, 0, 0, 0.6);
   --text-contacts-color: #666;
   --social-text-color: #444;
   --social-gradient1-color: #E1E1E1;
@@ -318,6 +319,19 @@
   text-transform: uppercase;
 }
 
+.filter-grid, .filter-range, .filter-features {
+  border: none;
+}
+
+.filter-range-field {
+  background-color: var(--basic-bg-color);
+  border: none;
+}
+
+.filter-range-field::placeholder {
+  color: var(--text-color);
+}
+
 .filter-range {
   line-height: 22px;
   text-transform: uppercase;
@@ -345,7 +359,11 @@
   color: var(--text-opacity-color);
 }
 
-.shop-sort-link:not([href]) {
+.shop-sort-link:hover {
+  color: var(--text-less-opacity-color);
+}
+
+.shop-sort-link:not([href]), .shop-sort-link:active {
   color: var(--text-bold-color);
 }
 

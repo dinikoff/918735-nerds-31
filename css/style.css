@@ -33,6 +33,9 @@
   font-weight: 400;
   font-style: normal;
   color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .visually-hidden {
@@ -41,6 +44,12 @@
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.container {
+  width: 1190px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* button */
@@ -124,6 +133,11 @@
   background-color: var(--basic-bg-color);
 }
 
+.header-container {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+}
+
 .header-logo:hover {
   opacity: 0.7;
 }
@@ -132,7 +146,13 @@
   opacity: 0.3;
 }
 
+.header-nav {
+  justify-self: center;
+}
+
 .header-nav-container {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -159,7 +179,20 @@
 /* slider */
 
 .slider {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.slider-item {
+  position: relative;
+  height: 431px;
+}
+
+.slider-img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .slider-title {
@@ -181,9 +214,19 @@
 
 .services-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  column-gap: 100px;
 }
 
 /* about */
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
 
 .about-title {
   font-size: 45px;
@@ -201,6 +244,14 @@
   text-transform: uppercase;
 }
 
+.about-numbers-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .about-numbers-title {
   font-weight: 700;
   color: var(--text-bold-color);
@@ -212,6 +263,7 @@
   font-weight: 700;
   line-height: 64px;
   color: var(--text-bold-color);
+  grid-area: number;
 }
 
 .about-percent {
@@ -222,12 +274,17 @@
 .about-numbers-text {
   font-size: 16px;
   line-height: 18px;
+  grid-area: def;
 }
 
 /* clients */
 
 .clients-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .client-logo {
@@ -243,6 +300,16 @@
 }
 
 /* contacts */
+
+.contacts-card {
+  position: absolute;
+  background-color: var(--text-button-color);
+}
+
+.contacts-map {
+  display: block;
+  margin: 0 auto;
+}
 
 .contacts-title {
   font-size: 18px;
@@ -268,7 +335,14 @@
 
 /* social */
 
+.social {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+}
+
 .social-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 

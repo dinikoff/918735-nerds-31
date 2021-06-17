@@ -378,11 +378,17 @@
 
 /* shop */
 
+.shop-wrapper {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+}
+
 .shop-title {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: var(--text-bold-color);
+  text-align: center;
 }
 
 .shop-subtitle {
@@ -391,6 +397,15 @@
   line-height: 30px;
   color: var(--text-bold-color);
   text-transform: uppercase;
+}
+
+.shop-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 42px;
+  grid-row-gap: 30px;
 }
 
 .filter-grid, .filter-range, .filter-features {

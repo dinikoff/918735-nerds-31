@@ -465,8 +465,27 @@
   line-height: 20px;
 }
 
+.shop-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 42px;
+}
+
 .shop-sort-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   list-style: none;
+}
+
+.shop-sort-item {
+  margin-right: 26px;
+}
+
+.shop-sort-item:last-child {
+  margin-right: 0;
 }
 
 .shop-sort-link {
@@ -490,5 +509,17 @@
 }
 
 .pagination-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+}
+
+.pagination-item {
+  margin-right: 11px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }

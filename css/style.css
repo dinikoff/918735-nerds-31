@@ -716,3 +716,7 @@ html {
 .pagination-item:last-child {
   margin-right: 0;
 }
+
+.footer {
+  margin-bottom: 57px;
+}
